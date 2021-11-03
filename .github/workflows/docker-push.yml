@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  push:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -19,12 +19,14 @@ jobs:
         
     - name: Extract Docker metadata
       uses: docker/metadata-action@v3
+      id: meta
       with:
         images: ghcr.io/${{ github.repository }}
         
     - name: Build Docker image and push
       uses: docker/build-push-action@v2
       with:
-          context: .
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+        push: true
+        context: .
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
