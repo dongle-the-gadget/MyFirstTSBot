@@ -1,0 +1,28 @@
+{
+  "name": "myfirsttsbot",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "tsc && cross-env NODE_ENV=production node ./build/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/index.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.9",
+    "@types/node": "^16.11.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.1.0",
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "discord.js": "^13.2.0",
+    "discordx": "^7.0.0",
+    "dotenv": "^10.0.0",
+    "reflect-metadata": "^0.1.13"
+  }
+}
