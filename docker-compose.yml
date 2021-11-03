@@ -1,10 +1,12 @@
 version: '3.9'
 services:
   bot:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/dongle-the-gadget/myfirsttsbot:main
     restart: 'on-failure'
     env_file: .env.production
     environment:
       NODE_ON_DOCKER: docker
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - //var/run/docker.sock:/var/run/docker.sock
