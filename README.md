@@ -1,5 +1,5 @@
 # MyFirstTSBot
-A Discord bot written in TypeScript that may or may not have a reason to exist ¯\_(ツ)_/¯
+A Discord bot written in TypeScript that may or may not have a reason to exist ¯\\\_(ツ)_/¯
 
 ## Hosting
 ### Quickstart
