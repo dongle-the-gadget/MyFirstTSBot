@@ -45,7 +45,7 @@ abstract class PowerCommands {
             else if (process.env.NODE_ON_DOCKER != "docker")
                 await interaction.reply("The bot is not running on Docker. Running this command will be the equivalent of `/power shutdown`");
             else {
-                await interaction.reply("Bot is restart...");
+                await interaction.reply("Bot is restarting...");
                 process.exit(1);
             }
     }
