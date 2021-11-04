@@ -32,7 +32,7 @@ client.on("ready", async () => {
         global: { log: true },
     });
     await client.initApplicationPermissions();
-    console.log("\nBot is ready!");
+    console.log(`\nLogged in as ${client.user!.tag}`);
 });
 
 client.on("interactionCreate", (interaction) => {
