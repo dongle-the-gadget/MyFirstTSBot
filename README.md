@@ -18,7 +18,7 @@ A Discord bot written in TypeScript that may or may not have a reason to exist Â
 4. On a command prompt/terminal window, `cd` to the folder containing the `docker-compose.yml` file.
 5. Type `docker-compose up -d` and press Enter, Docker Compose will download the required files and run the bot for you.
 
-**Note:** The `docker-compose.yml` file also include watchtower container for auto-updating. If you wish to manually update the bot, you can run `docker-compose pull` then `docker-compose up -d` again.
+**Note:** The `docker-compose.yml` file also includes the watchtower container for auto-updating. If you wish to manually update the bot, you can run `docker-compose pull` then `docker-compose up -d`.
 
 ### Standalone production
 1. Install [Node.js](https://nodejs.org/en/).
@@ -39,4 +39,4 @@ A Discord bot written in TypeScript that may or may not have a reason to exist Â
 3. Open a command prompt.terminal window, `cd` to the folder containing the cloned repository, and execute `npm i`.
 4. Once `npm i` is finished, run `npm run dev`. The bot will now run.
 
-**Note:** With `npm run dev`, Node will track file changes and restart the bot once a file is changed.
+**Note:** With `npm run dev`, `nodemon` will track file changes and restart the bot once a file is changed.
