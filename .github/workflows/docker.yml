@@ -35,11 +35,21 @@ jobs:
       with:
         images: ghcr.io/${{ github.repository }}
         
-    - name: Build Docker image and push
+    - name: Build Docker image and Push
       uses: docker/build-push-action@v2
+      if: github.event_name != 'pull_request'
       with:
         platforms: amd64,arm64
-        push: ${{ github.event_name != 'pull_request' }}
+        push: true
+        context: .
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        
+    - name: Build Docker image
+      uses: docker/build-push-action@v2
+      if: github.event_name == 'pull_request'
+      with:
+        platforms: amd64,arm64
         context: .
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
