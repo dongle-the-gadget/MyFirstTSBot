@@ -7,4 +7,6 @@ RUN npm i
 
 COPY . .
 
-ENTRYPOINT [ "npm", "start" ]
+RUN npm run build
+
+ENTRYPOINT [ "npm", "start-no-build" ]

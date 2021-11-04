@@ -4,6 +4,8 @@
   "description": "",
   "scripts": {
     "start": "tsc && cross-env NODE_ENV=production node ./build/index.js",
+    "build": "tsc",
+    "start-no-build": "cross-env NODE_ENV=production node ./build/index.js",
     "dev": "cross-env NODE_ENV=development nodemon ./src/index.ts"
   },
   "author": "",

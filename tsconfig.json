@@ -1,6 +1,4 @@
 {
-  "extends": "@tsconfig/node12/tsconfig.json",           /* Specify that we want Node 12 as base for this config */
-
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
