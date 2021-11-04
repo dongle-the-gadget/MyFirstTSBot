@@ -13,6 +13,7 @@
   "devDependencies": {
     "@tsconfig/node12": "^1.0.9",
     "@types/node": "^16.11.4",
+    "@types/pseudo-localization": "^2.1.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.1.0",
     "nodemon": "^2.0.14",
@@ -25,6 +26,7 @@
     "discord.js": "^13.2.0",
     "discordx": "^7.0.0",
     "dotenv": "^10.0.0",
+    "pseudo-localization": "^2.1.1",
     "reflect-metadata": "^0.1.13"
   }
 }

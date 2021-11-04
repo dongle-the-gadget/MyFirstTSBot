@@ -12,7 +12,7 @@ abstract class FlipACoinCommand {
     @Slash("flip-a-coin", { description: "Resolve any conflicts with a flip of the coin." })
     async flipacoin(
         @SlashChoice(CoinSides)
-        @SlashOption("side", { required: true })
+        @SlashOption("side", { required: true, description: "The side you bet the coin will face." })
         side: string,
         interaction: CommandInteraction): Promise<void> {
         const isHeadsChosenByUser = side === "Heads";

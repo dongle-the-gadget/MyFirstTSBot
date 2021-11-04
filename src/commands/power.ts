@@ -18,7 +18,7 @@ abstract class PowerCommands {
     @Slash("shutdown", { description: "(DANGEROUS) Shuts down the bot." })
     async shutdown(
         @SlashChoice("Yes I am sure that this operation will shut down the bot.", 1)
-        @SlashOption("are-you-sure")
+        @SlashOption("are-you-sure", { description: "Are you really sure that you want to shut down the bot? This action is permanent." })
         areyousure: number,
         interaction: CommandInteraction): Promise<void> {
             const isOwner = await this.isBotOwner(interaction.user, interaction.client);
