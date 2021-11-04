@@ -30,7 +30,7 @@ A Discord bot written in TypeScript that may or may not have a reason to exist Â
 4. Open a command prompt.terminal window, `cd` to the folder containing the cloned repository, and execute `npm i`.
 5. Once `npm i` is finished, run `npm start`. The bot will now run.
 
-## Development version
+### Development version
 1. Follow step 1 and 2 of [standalone production](#standalone-production).
 2. Create a `.env.development` file on the folder containing the clone repository. See step 3 of [quickstart](#quickstart).
 
