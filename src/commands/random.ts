@@ -1,5 +1,5 @@
 import { CommandInteraction } from "discord.js";
-import { Discord, Slash, SlashChoice, SlashOption } from "discordx";
+import { Discord, Slash, SlashChoice, SlashGroup, SlashOption } from "discordx";
 
 enum CoinSides {
     Heads = "Heads",
@@ -7,6 +7,7 @@ enum CoinSides {
 }
 
 @Discord()
+@SlashGroup("random")
 abstract class RandomCommands {
 
     @Slash("flip-a-coin", { description: "Resolve any conflicts with a flip of the coin." })
@@ -38,7 +39,7 @@ abstract class RandomCommands {
         }
     }
 
-    @Slash("random", { description: "Generate a random number." })
+    @Slash("number", { description: "Generate a random number." })
     async random(
         @SlashOption("min", { description: "The smallest number to be generated.", required: true })
         min: number,
