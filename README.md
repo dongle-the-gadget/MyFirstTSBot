@@ -27,7 +27,7 @@ A Discord bot written in TypeScript that may or may not have a reason to exist Â
 
 2. Clone this repository.
 3. Create a `.env.production` file on the folder containing the cloned repository. See step 3 of [quickstart](#quickstart).
-4. Open a command prompt.terminal window, `cd` to the folder containing the cloned repository, and execute `npm i`.
+4. Open a command prompt/terminal window, `cd` to the folder containing the cloned repository, and execute `npm i`.
 5. Once `npm i` is finished, run `npm start`. The bot will now run.
 
 ### Development version
@@ -36,7 +36,7 @@ A Discord bot written in TypeScript that may or may not have a reason to exist Â
 
    **Note:** With the development version, **`GUILD_ID` is required**.
 
-3. Open a command prompt.terminal window, `cd` to the folder containing the cloned repository, and execute `npm i`.
+3. Open a command prompt/terminal window, `cd` to the folder containing the cloned repository, and execute `npm i`.
 4. Once `npm i` is finished, run `npm run dev`. The bot will now run.
 
 **Note:** With `npm run dev`, `nodemon` will track file changes and restart the bot once a file is changed.
