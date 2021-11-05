@@ -10,7 +10,7 @@ abstract class PingCommand {
         const embed = new MessageEmbed()
             .setTitle("Ping result")
             .addField("Roundtrip latency", `\`\`\`${reply.createdTimestamp  - interaction.createdTimestamp} ms\`\`\``, true)
-            .addField("Websocket latency", `\`\`\`${interaction.client.ws.ping} ms\`\`\``, true)
+            .addField("WebSocket latency", `\`\`\`${interaction.client.ws.ping} ms\`\`\``, true)
             .setColor("#00ff7f");
         interaction.editReply({ embeds: [embed] });
     }
