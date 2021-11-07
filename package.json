@@ -1,14 +1,14 @@
 {
   "name": "myfirsttsbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dongle's misc Discord bot written in TypeScript.",
   "scripts": {
     "start": "tsc && cross-env NODE_ENV=production node ./build/index.js",
     "build": "tsc",
     "start-no-build": "cross-env NODE_ENV=production node ./build/index.js",
     "dev": "cross-env NODE_ENV=development nodemon ./src/index.ts"
   },
-  "author": "",
+  "author": "Dongle",
   "license": "MIT",
   "devDependencies": {
     "@tsconfig/node12": "^1.0.9",
